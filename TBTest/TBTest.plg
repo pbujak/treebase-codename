@@ -1,0 +1,148 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TreeBase - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPA203.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "D:\Prg\TreeBaseCommon" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TREEBASE_EXPORTS" /Fp"Debug/TreeBase.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Prg\TreeBase\api.cpp"
+"D:\Prg\TreeBase\blob.cpp"
+"D:\Prg\TreeBase\export.cpp"
+"D:\Prg\TreeBase\tbcore.cpp"
+"D:\Prg\TreeBase\TreeBase.cpp"
+"D:\Prg\TreeBase\value.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPA203.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPA204.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"D:\Prg\TreeBaseFinal\Debug\TreeBase.pdb" /debug /machine:I386 /def:".\TreeBase.def" /out:"D:\Prg\TreeBaseFinal\Debug\TreeBase.dll" /implib:"Debug/TreeBase.lib" /pdbtype:sept 
+.\Debug\api.obj
+.\Debug\blob.obj
+.\Debug\export.obj
+.\Debug\StdAfx.obj
+.\Debug\tbcore.obj
+.\Debug\TreeBase.obj
+.\Debug\value.obj
+\Prg\TreeBaseFinal\Debug\TreeBaseCommon.lib
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPA204.TMP"
+<h3>Output Window</h3>
+Compiling...
+tbcore.cpp
+d:\mvs\vc98\include\xtree(380) : warning C4786: 'pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskIn' : identifier was truncated to '255' characters in the debug information
+        d:\mvs\vc98\include\xtree(376) : while compiling class-template member function 'unsigned int __thiscall std::_Tree<class TTaskInfo *,class TTaskInfo *,struct std::set<class TTaskInfo *,struct std::less<class TTaskInfo *>,class std::allocator<class TTaskInfo *> >::_Kfn,struct std::less<class TTaskInfo *>,class std::allocator<class TTaskInfo *> >::erase(class TTaskInfo *const & )'
+d:\mvs\vc98\include\xtree(380) : warning C4786: 'std::pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator>' : identifier was truncated to '255' characters in the debug information
+        d:\mvs\vc98\include\xtree(376) : while compiling class-template member function 'unsigned int __thiscall std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::erase(TTaskInfo *const & )'
+Generating Code...
+d:\mvs\vc98\include\xtree(182) : warning C4786: 'std::_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >::~_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(182) : warning C4786: 'std::_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >::~_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(182) : warning C4786: 'std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::~_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(162) : warning C4786: 'std::_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(363) : warning C4786: '__ehhandler$?erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AViterator@12@V312@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(363) : warning C4786: '__unwindfunclet$?erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AViterator@12@V312@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(374) : warning C4786: '__ehhandler$?erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AViterator@12@V312@0@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(374) : warning C4786: '__unwindfunclet$?erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AViterator@12@V312@0@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(162) : warning C4786: 'std::_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >::_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(162) : warning C4786: 'std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAVTTaskInfo@@PAV1@U_Kfn@?$set@PAVTTaskInfo@@U?$less@PAVTTaskInfo@@@std@@V?$allocator@PAVTTaskInfo@@@3@@std@@U?$less@PAVTTaskInfo@@@4@V?$allocator@PAVTTaskInfo@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVTTaskInfo@@PAV1@U_Kfn@?$set@PAVTTaskInfo@@U?$less@PAVTTaskInfo@@@std@@V?$allocator@PAVTTaskInfo@@@3@@std@@U?$less@PAVTTaskInfo@@@4@V?$allocator@PAVTTaskInfo@@@4@@std@@_N@2@ABQAVTTaskInfo@@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAVTTaskInfo@@PAV1@U_Kfn@?$set@PAVTTaskInfo@@U?$less@PAVTTaskInfo@@@std@@V?$allocator@PAVTTaskInfo@@@3@@std@@U?$less@PAVTTaskInfo@@@4@V?$allocator@PAVTTaskInfo@@@4@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAVTTaskInfo@@PAV1@U_Kfn@?$set@PAVTTaskInfo@@U?$less@PAVTTaskInfo@@@std@@V?$allocator@PAVTTaskInfo@@@3@@std@@U?$less@PAVTTaskInfo@@@4@V?$allocator@PAVTTaskInfo@@@4@@std@@_N@2@ABQAVTTaskInfo@@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,bool>::pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@_N@2@ABU?$pair@QAU_TBHANDLE@@PAVTSection@@@2@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@_N@2@ABU?$pair@QAU_TBHANDLE@@PAVTSection@@@2@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(454) : warning C4786: '__ehhandler$?_Erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(454) : warning C4786: '__unwindfunclet$?_Erase@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(541) : warning C4786: '__ehhandler$?_Lrotate@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(541) : warning C4786: '__unwindfunclet$?_Lrotate@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(546) : warning C4786: '__ehhandler$?_Max@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@KAPAU_Node@12@PAU312@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(546) : warning C4786: '__unwindfunclet$?_Max@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@KAPAU_Node@12@PAU312@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(551) : warning C4786: '__ehhandler$?_Min@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@KAPAU_Node@12@PAU312@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(551) : warning C4786: '__unwindfunclet$?_Min@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@KAPAU_Node@12@PAU312@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(574) : warning C4786: '__ehhandler$?_Rrotate@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(574) : warning C4786: '__unwindfunclet$?_Rrotate@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAEXPAU_Node@12@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(112) : warning C4786: '__ehhandler$?_Inc@const_iterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAEXXZ' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(112) : warning C4786: '__unwindfunclet$?_Inc@const_iterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAEXXZ$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,std::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >::iterator,bool>::pair<std::_Tree<_TBHANDLE *,std::pair<_TBHANDLE * const,TSection *>,std::map<_TBHANDLE *,TSection *,std::less<_TBHANDLE *>,sCompiling...
+api.cpp
+td::allocator<TSection *> >::_Kfn,std::less<_TBHANDLE *>,std::allocator<TSection *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(512) : warning C4786: '__ehhandler$?_Insert@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAE?AViterator@12@PAU_Node@12@0ABU?$pair@QAU_TBHANDLE@@PAVTSection@@@2@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(512) : warning C4786: '__unwindfunclet$?_Insert@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IAE?AViterator@12@PAU_Node@12@0ABU?$pair@QAU_TBHANDLE@@PAVTSection@@@2@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(522) : warning C4786: '__ehhandler$?_Lbound@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IBEPAU_Node@12@ABQAU_TBHANDLE@@@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(522) : warning C4786: '__unwindfunclet$?_Lbound@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@IBEPAU_Node@12@ABQAU_TBHANDLE@@@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator>::pair<std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator,std::_Tree<TTaskInfo *,TTaskInfo *,std::set<TTaskInfo *,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::_Kfn,std::less<TTaskInfo *>,std::allocator<TTaskInfo *> >::iterator>' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(102) : warning C4786: '__ehhandler$?_Dec@const_iterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAEXXZ' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(102) : warning C4786: '__unwindfunclet$?_Dec@const_iterator@?$_Tree@PAU_TBHANDLE@@U?$pair@QAU_TBHANDLE@@PAVTSection@@@std@@U_Kfn@?$map@PAU_TBHANDLE@@PAVTSection@@U?$less@PAU_TBHANDLE@@@std@@V?$allocator@PAVTSection@@@4@@3@U?$less@PAU_TBHANDLE@@@3@V?$allocator@PAVTSection@@@3@@std@@QAEXXZ$0' : identifier was truncated to '255' characters in the debug information
+blob.cpp
+export.cpp
+TreeBase.cpp
+value.cpp
+Generating Code...
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__ehhandler$?insert@?$_Tree@PAXPAXU_Kfn@?$set@PAXU?$less@PAX@std@@V?$allocator@PAX@2@@std@@U?$less@PAX@3@V?$allocator@PAX@3@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAXPAXU_Kfn@?$set@PAXU?$less@PAX@std@@V?$allocator@PAX@2@@std@@U?$less@PAX@3@V?$allocator@PAX@3@@std@@_N@2@ABQAX@Z' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\xtree(236) : warning C4786: '__unwindfunclet$?insert@?$_Tree@PAXPAXU_Kfn@?$set@PAXU?$less@PAX@std@@V?$allocator@PAX@2@@std@@U?$less@PAX@3@V?$allocator@PAX@3@@std@@QAE?AU?$pair@Viterator@?$_Tree@PAXPAXU_Kfn@?$set@PAXU?$less@PAX@std@@V?$allocator@PAX@2@@std@@U?$less@PAX@3@V?$allocator@PAX@3@@std@@_N@2@ABQAX@Z$0' : identifier was truncated to '255' characters in the debug information
+d:\mvs\vc98\include\utility(21) : warning C4786: 'std::pair<std::_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >::iterator,bool>::pair<std::_Tree<void *,void *,std::set<void *,std::less<void *>,std::allocator<void *> >::_Kfn,std::less<void *>,std::allocator<void *> >::iterator,bool>' : identifier was truncated to '255' characters in the debug information
+Linking...
+   Creating library Debug/TreeBase.lib and object Debug/TreeBase.exp
+<h3>
+--------------------Configuration: TBTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPA334.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "D:\Prg\TreeBaseCommon" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/TBTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Prg\TBTest\BitmapWnd.cpp"
+"D:\Prg\TBTest\EditSec.cpp"
+"D:\Prg\TBTest\Explorer.cpp"
+"D:\Prg\TBTest\TBaseObj.cpp"
+"D:\Prg\TBTest\TBTest.cpp"
+"D:\Prg\TBTest\TBTestDlg.cpp"
+"D:\Prg\TBTest\ValEdit.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPA334.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPA335.TMP" with contents
+[
+ModifyDialogs.lib /nologo /subsystem:windows /incremental:yes /pdb:"D:\Prg\TreeBaseFinal\Debug\TBTest.pdb" /debug /machine:I386 /out:"D:\Prg\TreeBaseFinal\Debug\TBTest.exe" /pdbtype:sept 
+.\Debug\BitmapWnd.obj
+.\Debug\EditSec.obj
+.\Debug\Explorer.obj
+.\Debug\StdAfx.obj
+.\Debug\TBaseObj.obj
+.\Debug\TBTest.obj
+.\Debug\TBTestDlg.obj
+.\Debug\ValEdit.obj
+.\Debug\TBTest.res
+\Prg\TreeBase\Debug\TreeBase.lib
+\Prg\TreeBaseFinal\Debug\TreeBaseCommon.lib
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPA335.TMP"
+<h3>Output Window</h3>
+Compiling...
+BitmapWnd.cpp
+Generating Code...
+Compiling...
+EditSec.cpp
+Explorer.cpp
+TBaseObj.cpp
+D:\Prg\TBTest\TBaseObj.cpp(504) : warning C4101: 'e' : unreferenced local variable
+TBTest.cpp
+TBTestDlg.cpp
+ValEdit.cpp
+D:\Prg\TBTest\ValEdit.cpp(109) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(125) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(126) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(127) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(128) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(131) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Prg\TBTest\ValEdit.cpp(132) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TBTest.exe - 0 error(s), 48 warning(s)
+</pre>
+</body>
+</html>

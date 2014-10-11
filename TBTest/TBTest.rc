@@ -1,0 +1,323 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TBTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TBTest.ico"
+IDI_FOLDER              ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EDITSEC DIALOG  0, 0, 266, 149
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,209,8,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,24,50,14
+    EDITTEXT        IDC_NAME,7,19,175,14,ES_AUTOHSCROLL
+    LTEXT           "Nazwisko",IDC_STATIC,7,8,32,8
+    EDITTEXT        IDC_ADDRESS,7,59,175,14,ES_AUTOHSCROLL
+    LTEXT           "Adres",IDC_STATIC,7,47,19,8
+    EDITTEXT        IDC_AGE,7,99,175,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Wiek",IDC_STATIC,7,87,18,8
+END
+
+IDD_EXPLORER DIALOGEX 0, 0, 378, 311
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,321,222,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,321,242,50,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,47,305,211
+    EDITTEXT        IDC_EDIT,7,7,268,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "Back",IDC_BACK,321,7,50,14
+    PUSHBUTTON      "New Section",IDC_NEW_SECTION,321,25,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,321,42,50,14
+    EDITTEXT        IDC_LABEL,32,24,211,12,ES_AUTOHSCROLL
+    LTEXT           "Label:",IDC_STATIC,7,26,20,8
+    PUSHBUTTON      "Delete label",IDC_DELETE_LABEL,249,24,64,12
+    PUSHBUTTON      "Update",IDC_UPDATE,321,62,50,14
+    PUSHBUTTON      "Rollback",IDC_ROLLBACK,321,79,50,14
+    COMBOBOX        IDC_TESTCASES,17,279,116,96,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Tests",IDC_STATIC,7,264,305,40
+    PUSHBUTTON      "Run Test",IDC_RUNTEST,137,279,50,14
+    PUSHBUTTON      "Run All Tests",IDC_RUNALLTESTS,236,278,63,14
+END
+
+IDD_VALEDIT DIALOG  0, 0, 256, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,174,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,194,50,14
+    GROUPBOX        "Other",IDC_STATIC,7,25,184,70
+    EDITTEXT        IDC_TEXT,41,36,139,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTEGER,42,55,139,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLOAT,41,74,139,14,ES_AUTOHSCROLL
+    LTEXT           "Text",IDC_STATIC,15,39,15,8
+    LTEXT           "Integer",IDC_STATIC,16,58,23,8
+    LTEXT           "Float",IDC_STATIC,15,75,16,8
+    GROUPBOX        "Point",IDC_STATIC,7,100,59,52
+    EDITTEXT        IDC_POINT_X,23,111,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_Y,23,132,37,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,13,111,8,8
+    LTEXT           "Y",IDC_STATIC,13,135,8,8
+    GROUPBOX        "Rectangle",IDC_STATIC,72,100,119,53
+    EDITTEXT        IDC_RECT_TOP,113,108,36,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECT_BOTTOM,113,132,36,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECT_RIGHT,153,119,30,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECT_LEFT,79,118,30,16,ES_AUTOHSCROLL
+    GROUPBOX        "Point",IDC_STATIC,7,155,59,53
+    EDITTEXT        IDC_FPOINT_X,23,164,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FPOINT_Y,23,186,37,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,13,165,8,8
+    LTEXT           "Y",IDC_STATIC,13,188,8,8
+    GROUPBOX        "Rectangle",IDC_STATIC,72,155,119,53
+    EDITTEXT        IDC_FRECT_TOP,113,163,36,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRECT_BOTTOM,113,185,36,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRECT_RIGHT,153,172,30,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRECT_LEFT,79,172,30,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_VALTYPE,188,7,61,103,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_VALNAME,51,7,130,13,ES_AUTOHSCROLL
+    LTEXT           "Value name",IDC_STATIC,7,10,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EDITSEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_EXPLORER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_VALEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LISTMENU MENU 
+BEGIN
+    POPUP "_MENU"
+    BEGIN
+        MENUITEM "&Delete",                     ID_DELETE
+        MENUITEM "&New section",                ID_NEWSECTION
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit value",                 ID_EDIT_VALUE
+        MENUITEM "&Add value",                  ID_ADD_VALUE
+        MENUITEM "Add &image",                  ID_ADD_IMAGE
+    END
+END
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TBTEST_DIALOG DIALOGEX 0, 0, 398, 220
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TBTest"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,341,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,341,23,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,7,7,324,206,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "New",IDC_NEW,341,69,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,341,88,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TBTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "TBTest MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TBTest"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "TBTest.EXE"
+            VALUE "ProductName", "TBTest Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TBTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
