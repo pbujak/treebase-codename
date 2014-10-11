@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeBaseCommon", "..\TreeBaseCommon\TreeBaseCommon.vcproj", "{9ACA77CC-F2BF-4420-9628-8B87C29D3877}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TBTest", "TBTest.vcproj", "{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeBase", "..\TreeBase\TreeBase.vcproj", "{B86E3DD9-187A-494C-93A0-E5C4A99277FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		ReleaseNoOpt|Win32 = ReleaseNoOpt|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Debug|Win32.Build.0 = Debug|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Release|Win32.ActiveCfg = Release|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Release|Win32.Build.0 = Release|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.ReleaseNoOpt|Win32.ActiveCfg = ReleaseNoOpt|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.ReleaseNoOpt|Win32.Build.0 = ReleaseNoOpt|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.Debug|Win32.Build.0 = Debug|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.Release|Win32.ActiveCfg = Release|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.Release|Win32.Build.0 = Release|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.ReleaseNoOpt|Win32.ActiveCfg = ReleaseNoOpt|Win32
+		{3B11EE1A-792B-4495-B0F0-5A09E79B52F8}.ReleaseNoOpt|Win32.Build.0 = ReleaseNoOpt|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.Debug|Win32.Build.0 = Debug|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.Release|Win32.ActiveCfg = Release|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.Release|Win32.Build.0 = Release|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.ReleaseNoOpt|Win32.ActiveCfg = ReleaseNoOpt|Win32
+		{B86E3DD9-187A-494C-93A0-E5C4A99277FF}.ReleaseNoOpt|Win32.Build.0 = ReleaseNoOpt|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
