@@ -1,0 +1,7 @@
+2013-03-25
+==========
+
+1) Remove GetIDTable, replace by subsequent data blocks
+2) Introduce temporary section
+3) Use temporary section for snapshots
+4) Use temporary section for edit mode

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeBaseSvr", "TreeBaseSvr.vcproj", "{D3BBAFB9-0892-4ECB-B473-218D6CE91155}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeBaseCommon", "..\TreeBaseCommon\TreeBaseCommon.vcproj", "{9ACA77CC-F2BF-4420-9628-8B87C29D3877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		ReleaseNoOpt|Win32 = ReleaseNoOpt|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.Debug|Win32.Build.0 = Debug|Win32
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.Release|Win32.ActiveCfg = Release|Win32
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.Release|Win32.Build.0 = Release|Win32
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.ReleaseNoOpt|Win32.ActiveCfg = ReleaseNoOpt|Win32
+		{D3BBAFB9-0892-4ECB-B473-218D6CE91155}.ReleaseNoOpt|Win32.Build.0 = ReleaseNoOpt|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Debug|Win32.Build.0 = Debug|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Release|Win32.ActiveCfg = Release|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.Release|Win32.Build.0 = Release|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.ReleaseNoOpt|Win32.ActiveCfg = ReleaseNoOpt|Win32
+		{9ACA77CC-F2BF-4420-9628-8B87C29D3877}.ReleaseNoOpt|Win32.Build.0 = ReleaseNoOpt|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

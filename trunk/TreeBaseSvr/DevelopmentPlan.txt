@@ -1,0 +1,22 @@
+
+1) Finish unit tests for section: 
+	  - add tests TSectionSegment_Rename for equal, smaller, larger segment
+
+2) Modify class TServerMainTask:
+      - add class TRunningContext:
+               TAppRunningContext     = SUBCLASS(TRunningContext)
+               TServiceRunningContext = SUBCLASS(TRunningContext)
+	  - change constructor to TServerMainTask( TRunningContext *a_pContext )
+
+3) Investigate window to receive WM_QUERYENDSESSION, WM_ENDSESSION
+	  - add methods Stop/Shutdown/Alarm to TServerMainTask to implement mode (app/service) independent handling
+
+4) Add container-only sections (no values)
+	  - add new value to SECTIONHEADER
+	  - add parameters to TBASE_CreateSection
+	  - root sections are always container-only (add neccessary initialization code to class FILE_InitStorage)
+	  	  
+
+4) Add Class Storage::TMemoryStorage = SUBCLASS(Storage::TStorage)
+	  - use as default when DBManager::AddEntry filename is empty
+	  
