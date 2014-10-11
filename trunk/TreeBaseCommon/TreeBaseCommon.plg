@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TreeBaseCommon - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP5000.TMP" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TREEBASECOMMON_EXPORTS" /Fp"Release/TreeBaseCommon.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Prg\TreeBaseCommon\lpc.cpp"
+"D:\Prg\TreeBaseCommon\TreeBaseCommon.cpp"
+"D:\Prg\TreeBaseCommon\TValueMap.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP5000.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP5001.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"D:\Prg\TreeBaseFinal\Release\TreeBaseCommon.pdb" /machine:I386 /out:"D:\Prg\TreeBaseFinal\Release\TreeBaseCommon.dll" /implib:"Release/TreeBaseCommon.lib" 
+.\Release\lpc.obj
+.\Release\StdAfx.obj
+.\Release\TreeBaseCommon.obj
+.\Release\TValueMap.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP5001.TMP"
+<h3>Output Window</h3>
+Compiling...
+lpc.cpp
+TreeBaseCommon.cpp
+TValueMap.cpp
+Generating Code...
+Linking...
+   Creating library Release/TreeBaseCommon.lib and object Release/TreeBaseCommon.exp
+
+
+
+<h3>Results</h3>
+TreeBaseCommon.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
