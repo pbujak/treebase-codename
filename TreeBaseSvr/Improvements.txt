@@ -1,0 +1,67 @@
+
+1) Finish unit tests for section: 
+	  - add tests TSectionSegment_Rename for equal, smaller, larger segment
+
+2) Modify class TServerMainTask:
+      - add class TRunningContext:
+               TAppRunningContext     = SUBCLASS(TRunningContext)
+               TServiceRunningContext = SUBCLASS(TRunningContext)
+	  - change constructor to TServerMainTask( TRunningContext *a_pContext )
+
+3) Investigate window to receive WM_QUERYENDSESSION, WM_ENDSESSION
+	  - add methods Stop/Shutdown/Alarm to TServerMainTask to implement mode (app/service) independent handling
+
+4) Add container-only sections (no values)
+	  - add new value to SECTIONHEADER
+	  - add parameters to TBASE_CreateSection  (TB_SECURITY_ATTRIBUTES{allowLeaves, SD})
+	  - root sections are always container-only (add neccessary initialization code to class FILE_InitStorage)
+	  - remove explicit class TRootSection	  
+	  - similar behaviour as current TRootSection
+DEBUG TSection::create at client side	  
+
+5) Add Class Storage::TMemoryStorage = SUBCLASS(Storage::TStorage)
+      - swicth ro read-only if >85%
+	  - use as default when DBManager::AddEntry filename is empty
+	  - add junction point support Map:{SEGID_F->SEGID_F}, prevent deleting, renaming
+	  - target SEGID_F may be SEGID_LAZY(id) handled by TServerMainTask(add parameters computernane, username)
+	  - mount "\" to memory storage 
+	  - add junction "\RootStorage"  to (FILE)\
+	  - add junction "\LocalMachine" to (FILE)\Computers\COMPUTER_NAME[S:RWX;A:RW]
+	  - add junction "\CurrentUser"  to (FILE)\Users\USER_NAME[S:RWX;O:RW;A:R;]
+	  - add section "\Status\Alarms[S:RWX;A:R]" - always in memory
+	  
+6) Implement access rights
+      - implement administrative mode by G.entry.m_hInitEventAdmin
+	  - add class TUniqueBinarySegment = SUBCLASS(TSectionSegment)
+			with reference management, key generation (use anonymous values)
+	  - add access rights
+			Descriptor
+			{
+			    owner: UUID
+			    owner(rwx), admin(rwx), all(rwx)
+			    Extended Allow List: {UUID1, rwx}, {UUID2, rwx}, ...
+			    Extended Deny List: {UUID1, rwx}, {UUID2, rwx}, ...
+			}
+	  - Relation: {TSegment} *<----->1 {SECREF}	(hash, order)
+	              {SECREF} 1<----->1 {SECURITY_DESCRIPTOR}
+	  
+	  - implement SecurityContext(owner:UUID, isAdmin:bool) for each thread
+	  - add class TSecurityManager - for each storage separate instance
+			implement accessCheck, addSecurity, getSecurity
+			
+			SECREF(SECURITY_DESCRIPTOR) is unique
+			
+	  - add field SECREF for each segment descriptor SEGMENT_ENTRY
+	  - implement access check before segment operations
+	  
+	  - implement translation between internal user IDs (UUID) and external 
+			WinAccessToken.userID
+			MD5Hash(SID)
+	  - add requests SFV_PROCESS_ATTACH, SFV_THREAD_ATTACH
+	  
+	  - add junctions for \CurrentUser, \LocalMachine
+	  
+7) FIFO-based export/import
+      - add stream support for both BLOBs and export/import
+      - add scanning coroutine in separate thread (push pages to write to FIFO)
+      - add function
