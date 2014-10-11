@@ -1,0 +1,59 @@
+; Shapes.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TreeBase"
+DESCRIPTION  'Tree Base Support Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	_xxx_test
+	TBASE_Flush
+	TBASE_CreateSection
+	TBASE_OpenSection
+	TBASE_CloseSection
+	TBASE_DeleteSection
+	TBASE_RenameSection
+	TBASE_CreateSectionLink
+	TBASE_GetSectionLinkCount
+	TBASE_GetFirstItem
+	TBASE_GetNextItem
+	TBASE_AllocValue
+	TBASE_ReAllocValue
+	TBASE_AddValueRef
+	TBASE_FreeValue
+	TBASE_GetValue
+	TBASE_SetValue
+	TBASE_DeleteValue	
+	TBASE_Edit
+	TBASE_Update
+	TBASE_CancelUpdate
+	TBASE_SectionExists
+	TBASE_ValueExists
+	TBASE_LinkLongBinary
+	TBASE_GetLastErrorInfo
+	TBASE_GetSectionName
+	TBASE_GetSectionLabel
+	TBASE_SetSectionLabel
+	TBASE_DeleteSectionLabel
+	TBASE_GetSectionAttributes
+	TBASE_GetSectionAccess
+	TBASE_ExportSection
+	TBASE_ImportSection
+	TBASE_GetSectionSecurity
+	TBASE_SetSectionSecurity
+
+    TBASE_ReadLongBinary
+    TBASE_WriteLongBinary
+	TBASE_GetData     
+	TBASE_PutData
+	TBASE_CloseInputStream
+	TBASE_CloseOutputStream
+	
+	TBASE_AclCreate           
+	TBASE_AclDestroy          
+	TBASE_AclResetAccessRights
+	TBASE_AclSetAccessRights  
+	TBASE_AclGetAccessRights  
+	TBASE_AclGetCount         
+	TBASE_AclGetEntry         
+	
+	
