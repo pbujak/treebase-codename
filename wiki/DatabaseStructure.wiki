@@ -2,5 +2,6 @@
 
 = Database Structure =
 
-|| *Section* || *Description* ||
-|| _\_ || Root section ||
+|| *Section* || *Description* || *Remarks* ||
+|| _\_ || Root section || Read Only ||
+|| _\CurrentUser_ || Section related to current user || The current user ||
