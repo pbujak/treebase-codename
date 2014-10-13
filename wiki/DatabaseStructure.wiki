@@ -2,4 +2,6 @@
 
 = Database Structure =
 
-== \ The root section ==
+|| *Section* || *Description* ||
+|| \ || The root section ||
+|| \CurrentUser || Related to current used (logged OS account) ||
