@@ -4,4 +4,5 @@
 
 || *Section* || *Description* || *Remarks* ||
 || _\_ || Root section || Read Only ||
-|| _\CurrentUser || Section related to current user || The current user ||
+|| _\CurrentUser || Section related to current user || 
+The current user ||
