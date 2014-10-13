@@ -9,3 +9,5 @@
 || \Databases || Its purpose is to create shared databases ||
 || \!RootStorage || The root of disk storage excluding in-memory sections ||
 || \System || System sections including current status such as alarms, clients, mounted database files ||
+
+== \!CurrentUser ==
