@@ -2,5 +2,4 @@
 
 = Database Structure =
 
-== \ ==
- * The root section
+== \ The root section ==
