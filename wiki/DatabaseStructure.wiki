@@ -4,5 +4,5 @@
 
 || *Section* || *Description* ||
 || \ || The root section ||
-|| \CurrentUser || Related to current used (logged OS account) ||
-|| \LocalMachine || Related to current used (logged OS account) ||
+|| \!CurrentUser || Related to current used (logged OS account) ||
+|| \!LocalMachine || Related to current used (logged OS account) ||
