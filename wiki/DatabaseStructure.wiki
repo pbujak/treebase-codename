@@ -3,4 +3,4 @@
 = Database Structure =
 
 || *Section* || *Description* ||
-|| == \ == || Root section ||
+|| _\_ || Root section ||
