@@ -5,4 +5,7 @@
 || *Section* || *Description* ||
 || \ || The root section ||
 || \!CurrentUser || Related to current used (logged OS account) ||
-|| \!LocalMachine || Related to current used (logged OS account) ||
+|| \!LocalMachine || Related to client computer ||
+|| \!Databases || Its purpose is to create shared databases ||
+|| \!RootStorage || The root of disk storage excluding in-memory sections ||
+|| \!System || Special purpose ||
