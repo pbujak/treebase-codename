@@ -1,5 +1,5 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Use Cases =
 
 [https://treebase.googlecode.com/svn/images/TreeBaseSchema.PNG]
