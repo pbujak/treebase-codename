@@ -11,5 +11,5 @@
 || \System || System sections including current status such as alarms, clients, mounted database files ||
 
 ----
-*\!CurrentUser*
+=== \!CurrentUser ===
 If any application tries to store data local to logged on OS user, this section should be used
