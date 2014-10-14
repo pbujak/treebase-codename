@@ -56,3 +56,5 @@ ENDIF
 
 ----
 == Allocating security attributes for newly created sections ==
+ * When security attributes are given explicitely
+ * When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belong to the same protection domain as parent
