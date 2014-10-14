@@ -2,8 +2,8 @@
 
 = Data Representation =
 
-* Each section can contain subsections. 
-* Each section can contain named values, unless it has an attribute TBATTR_NOVALUES
+  * Each section can contain subsections. 
+  * Each section can contain named values, unless it has an attribute TBATTR_NOVALUES
 
 
 = Details =
