@@ -22,4 +22,5 @@
 || *Date* || A value, that represents a date or time. Sequence of 16 values: {_year_,_month_,_dayOfWeek_,_day_,_hour_,_minute_,_seconds_,_milis_}||
 || *Point Group* || The sequence of integral points with determined length ||
 || *Float Point Group* || The sequence of float points with determined length ||
-|| *Binary* || Byte block up to 512 bytes ||
+|| *Binary* || Binary data up to 512 bytes ||
+|| *Long Binary* || Binary data, that can exceed 512 bytes. It is more resource consuming than *binary* ||
