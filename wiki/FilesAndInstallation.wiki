@@ -12,6 +12,10 @@
 || *treebase.lib* || API LIB || C/C++ libraries ||
 
 ----
+== Data Files ==
+ * The data files are stored in directory _<<DeploymentDir>>\Data_
+
+----
 == Installation ==
  * Copy files _treebase.dll_ and _treebasecommon.dll_ to system-wide shared directory. It can be for example _C:\Windows\System32_, however it is recommended to create a dedicated shared directory for example _C:\Lib_ and add it to environmental variable _PATH_.
  * Copy file _treebaseengine.exe_ to deployment directory
