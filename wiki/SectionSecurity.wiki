@@ -52,9 +52,10 @@ ENDIF
 #define TBACCESS_EXECUTE     (TBACCESS_LINK | TBACCESS_DELETE | TBACCESS_SETSTATUS)
 #define TBACCESS_ALL         (TBACCESS_READWRITE | TBACCESS_EXECUTE)
 #define TBACCESS_NO_GETVALUE (TBACCESS_ALL & ~TBACCESS_GETVALUE)
-</code>
+#define TBACCESS_ADMIN_MINIMAL (TBACCESS_DELETE | TBACCESS_EXPORT | TBACCESS_SETSTATUS)
+ * </code>
 
 ----
 == Allocating security attributes for newly created sections ==
- * When security attributes are given explicitely
- * When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belong to the same protection domain as parent
+ * When security attributes are given explicitely they are just applied. A new protection domain is created for the new section. Either the rights for administrators of for all must be at least TBACCESS_ADMIN_MINIMAL.
+ * When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belongs to the same protection domain as the parent.
