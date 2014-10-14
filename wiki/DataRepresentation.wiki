@@ -2,15 +2,15 @@
 
 = Data Representation =
 
+== General Rules ==
   * Each section can contain subsections. 
   * Each section can contain named values, unless it has an attribute TBATTR_NOVALUES
   * Each named value has a form _key -> value_
   * Duplicate names of both values and subsections are not allowed within section
 
 
-= Details =
+== Value Types ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+|| Integer || 32-bit integral value ||
+|| Float || 64-bit floating point value ||
+|| Text || String value (up to 255 characters) ||
