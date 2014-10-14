@@ -1,13 +1,13 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Section Security Model =
 
-Add your content here.
+== General ==
+Each section contains associated information security attributes. It tells if user associated to client has permissions to perform any operation. The format of security attributes is following
 
+ * Access rights for owner
+ * Access rights for administrators
+ * Access rights for all
+ * White list (optional)
+ * Black list (optional)
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
