@@ -11,7 +11,7 @@
 || \System || System sections including current status such as alarms, clients, mounted database files ||
 
  * *\*
- It is the root of the whole namespace. Is is created regardles of availability of database. It is read only for all users, because it is a system section mounted on memory.
+ It is the root of the whole namespace. Is is created regardles of availability of database. It is an in-memory system section that is read-only for all users.
 
 ----
  * *\!CurrentUser*
@@ -37,3 +37,7 @@
 || System || 'The data used by engine itself (mapping OS users to internal UUIDs) ||
 || Users || The root of all user data (see \!CurrentUser) ||
 || Computers || The root of all machine data (see \!LocalMachine) ||
+
+----
+ * *\System*
+ It is reserved for
