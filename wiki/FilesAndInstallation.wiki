@@ -13,7 +13,7 @@
 
 ----
 == Data Files ==
- * The data files are stored in directory _<<DeploymentDir>>\Data_
+ * The data files are stored in directory _'<<DeploymentDir>>\Data'_
 
 ----
 == Installation ==
