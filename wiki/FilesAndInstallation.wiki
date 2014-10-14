@@ -19,4 +19,4 @@
 {{{ 
 TreeBaseEngine /install 
 }}}
-   The Windows service will be created and
+ The Windows service will be created and _Data_ subdirectory created in deployment directory
