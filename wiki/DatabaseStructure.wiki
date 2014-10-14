@@ -30,6 +30,6 @@
 ----
  * *\!RootStorage*
  In is the root of data physically located disk. It contains the following subsections:
- || System || The data used by engine itself (mapping OS users to internal UUIDs) ||
- || Users || The root of all user data (see \!CurrentUser) ||
- || Computers || The root of all machine data (see \!LocalMachine) ||
+|| System || 'The data used by engine itself (mapping OS users to internal UUIDs) ||
+|| Users || The root of all user data (see \!CurrentUser) ||
+|| Computers || The root of all machine data (see \!LocalMachine) ||
