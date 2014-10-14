@@ -11,7 +11,7 @@
 || \System || System sections including current status such as alarms, clients, mounted database files ||
 
  * *\!CurrentUser*
- If any application tries to store data local to logged on OS user, just this section should be used
+ If any application tries to store data local to logged on OS user, just this section should be used. It is mapped to _\!RootStorage\Users\<<!CurrentUserId>>_
 
 ----
  * *\!LocalMachine*
