@@ -4,7 +4,8 @@
 
 == Package Components ==
 
-|| treebase.dll || API DLL _is should be placed in system-wide shared directory ||
+|| *treebase.dll* || API DLL - it should be placed in system-wide shared directory ||
+|| *treebasecommon.dll* || common DLL for API and engine ||
 
 
 = Details =
