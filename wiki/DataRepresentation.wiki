@@ -11,6 +11,6 @@
 
 == Value Types ==
 
-|| Integer || 32-bit integral value ||
-|| Float || 64-bit floating point value ||
-|| Text || String value (up to 255 characters) ||
+|| *Integer* || 32-bit integral value ||
+|| *Float* || 64-bit floating point value ||
+|| *Text* || String value (up to 255 characters) ||
