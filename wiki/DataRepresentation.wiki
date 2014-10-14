@@ -19,4 +19,4 @@
 || *Rectangle* || A quad of integral values {_x_,_y_,_width_,_height_} that represent a rectangle ||
 || *Float Point* || A pair of float values {_x_,_y_} that represent a point ||
 || *Float Rectangle* || A quad of float values {_x_,_y_,_width_,_height_} that represent a rectangle ||
-|| *Date* || A value, that represents a date ||
+|| *Date* || A value, that represents a date or time {_year_,_month_,_dayOfWeek_,_day_,_hour,_munute_,_seconds_,_milis_}||
