@@ -3,12 +3,12 @@
 = Database Structure =
 
 || *Section* || *Description* ||
-|| \ || The root section ||
-|| \!CurrentUser || Related to current used (logged OS account) ||
-|| \!LocalMachine || Related to client computer ||
-|| \Databases || Its purpose is to create shared databases ||
-|| \!RootStorage || The root of disk storage excluding in-memory sections ||
-|| \System || System sections including current status such as alarms, clients, mounted database files ||
+|| *\* || The root section ||
+|| *\!CurrentUser* || Related to current used (logged OS account) ||
+|| *\!LocalMachine* || Related to client computer ||
+|| *\Databases* || Its purpose is to create shared databases ||
+|| *\!RootStorage* || The root of disk storage excluding in-memory sections ||
+|| *\System* || System sections including current status such as alarms, clients, mounted database files ||
 
  * *\*
  It is the root of the whole namespace. Is is created regardles of availability of database. It is an in-memory system section that is read-only for all users.
