@@ -61,6 +61,6 @@ ENDIF
  * When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belongs to the same protection domain as the parent.
 
 ----
-== Security attributes of system sections ==
+== Security attributes of standard sections ==
 
-|| *\* || {Owner:-,Admins:-,All:*RO*} ||
+|| *\* || {_Owner_:-,_Admins_:-,_All_:ReadOnly} ||
