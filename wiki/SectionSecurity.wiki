@@ -63,4 +63,5 @@ ENDIF
 ----
 == Security attributes of standard sections ==
 
-|| *\* || {_Owner_:-,_Admins_:-,_All_:ReadOnly} ||
+|| *\* || {Owner:-,Admins:-,All:*!ReadOnly*} ||
+|| *\CurrentUser* || {Owner:*!AllAccess*,Admins:-,All:*!ReadOnly*} ||
