@@ -13,7 +13,9 @@
 
 ----
 == Data Files ==
- * The data files are stored in directory _<<!DeploymentDir>>\Data_
+ * The data files are stored in directory _<<!DeploymentDir>>\Data_. The following files are created:
+ || *treebase.dat* || The data file mounted on _\!RootStorage_ section ||
+ || *users.dat* || The data file mounted on _\!RootStorage\Users_ section ||
 
 ----
 == Installation ==
