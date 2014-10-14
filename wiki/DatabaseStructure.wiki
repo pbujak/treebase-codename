@@ -10,6 +10,10 @@
 || \!RootStorage || The root of disk storage excluding in-memory sections ||
 || \System || System sections including current status such as alarms, clients, mounted database files ||
 
+ * *\*
+ It is the root of the whole namespace. Is is created regardles of availability of database. It is read only for all users, because it is a system section mounted on memory.
+
+----
  * *\!CurrentUser*
  If any application tries to store data local to logged on OS user, just this section should be used. It is mapped to _\!RootStorage\Users\<<!CurrentUserId>>_.
 
