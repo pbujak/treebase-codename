@@ -13,6 +13,7 @@ Each section contains associated information security attributes. It tells if us
 
 The white list contains information about allowed rights of specified users. In order black list contains denied rights for specified users
 
+----
 == Checking algorithm ==
 <code language="Basic">
 BOOLEAN Allow
@@ -33,6 +34,7 @@ ENDIF
 
 </code>
 
+----
 == Access rights ==
 <code language="C++">
 #define TBACCESS_BROWSE      0x001
@@ -51,3 +53,6 @@ ENDIF
 #define TBACCESS_ALL         (TBACCESS_READWRITE | TBACCESS_EXECUTE)
 #define TBACCESS_NO_GETVALUE (TBACCESS_ALL & ~TBACCESS_GETVALUE)
 </code>
+
+----
+== Allocating security attributes for newly created sections ==
