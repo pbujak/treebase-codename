@@ -15,7 +15,8 @@
 == Installation ==
  * Copy files _treebase.dll_ and _treebasecommon.dll_ to system-wide shared directory. It can be for example _C:\Windows\System32_, however it is recommended to create a dedicated shared directory for example _C:\Lib_ and add it to environmental variable _PATH_.
  * Copy file _treebaseengine.exe_ to deployment directory
- * Use the following command line for account with administrative privileges
+ * Use the following command line for account with *administrative privileges*
 {{{ 
 TreeBaseEngine /install 
 }}}
+   The Windows service will be created and
