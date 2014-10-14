@@ -23,4 +23,10 @@ ELSE
    Allow = Check(Attributes.AllRights)
 ENDIF
 
+IF NOT Allow THEN
+   Allow = Check(Attributes.WhiteList(CurrentUser))
+ELSE IF Allow THEN
+   Allow = Check(Attributes.BlackList(CurrentUser))
+ENDIF
+
 </code>
