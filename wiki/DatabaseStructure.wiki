@@ -17,4 +17,4 @@
 
 ----
  * *\!LocalMachine*
- Should be used to store any data related to client computer
+ Should be used to store any data related to client computer. It is mapped to _\!RootStorage\Computers\<<!ClientComputerName>>_.
