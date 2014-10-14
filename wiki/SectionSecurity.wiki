@@ -59,3 +59,8 @@ ENDIF
 == Allocating security attributes for newly created sections ==
  * When security attributes are given explicitely they are just applied. A new protection domain is created for the new section. Either the rights for administrators of for all must be at least TBACCESS_ADMIN_MINIMAL.
  * When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belongs to the same protection domain as the parent.
+
+----
+== Security attributes of system sections ==
+
+|| *\* || {Owner:-,Admins:-,All:*RO*} ||
