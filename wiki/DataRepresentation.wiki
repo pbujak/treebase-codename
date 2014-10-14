@@ -17,3 +17,5 @@
 || *Currency* || 128-bit integral value, that represents currency scaled by 10000 ||
 || *Point* || A pair of integral values {_x_,_y_} that represent a point ||
 || *Rectangle* || A quad of integral values {_x_,_y_,_width_,_height_} that represent a rectangle ||
+|| *Float Point* || A pair of float values {_x_,_y_} that represent a point ||
+|| *Float Rectangle* || A quad of float values {_x_,_y_,_width_,_height_} that represent a rectangle ||
