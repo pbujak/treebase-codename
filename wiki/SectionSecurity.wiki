@@ -14,6 +14,13 @@ Each section contains associated information security attributes. It tells if us
 == Checkinh algorithm ==
 <code language="Basic">
 BOOLEAN Allow
+
 IF CurrentUser IS OWNER THEN
    Allow = Check(Attributes.OwnerRights)
+ELSE IF CurrentUser HAS OS ADMIN PRIVILEGES
+   Allow = Check(Attributes.AdminRights)
+ELSE
+   Allow = Check(Attributes.AllRights)
+ENDIF
+
 </code>
