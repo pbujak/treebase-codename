@@ -11,7 +11,9 @@ Each section contains associated information security attributes. It tells if us
  * White list (optional)
  * Black list (optional)
 
-== Checkinh algorithm ==
+The white list contains information about allowed rights of specified users. In order black list contains denied rights for specified users
+
+== Checking algorithm ==
 <code language="Basic">
 BOOLEAN Allow
 
@@ -23,7 +25,7 @@ ELSE
    Allow = Check(Attributes.AllRights)
 ENDIF
 
-IF NOT Allow THEN
+ IF NOT Allow THEN
    Allow = Check(Attributes.WhiteList(CurrentUser))
 ELSE IF Allow THEN
    Allow = Check(Attributes.BlackList(CurrentUser))
