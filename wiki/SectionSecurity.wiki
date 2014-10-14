@@ -67,3 +67,5 @@ ENDIF
 || *\* || || || !ReadOnly ||
 || *\!CurrentUser* || !AllAccess || !AllAccess || !ReadOnly AND NOT Export ||
 || *\!LocalMachine* || || !AllAccess || !ReadOnly ||
+|| *\!RootStorage* || || !AllAccess || !ReadOnly ||
+|| *\System* || || || !ReadOnly ||
