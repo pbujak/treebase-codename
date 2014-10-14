@@ -2,11 +2,9 @@
 
 = Data Representation =
 
-Each Section have the following form
-{{{
- * Key1 Value1
- * Key2 Value2
-}}}
+* Each section can contain subsections. 
+* Each section can contain named values, unless it has an attribute TBATTR_NOVALUES
+
 
 = Details =
 
