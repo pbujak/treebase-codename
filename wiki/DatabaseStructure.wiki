@@ -18,4 +18,5 @@
 ----
  * *\!LocalMachine*
  Should be used to store any data related to client computer. It is mapped to _\!RootStorage\Computers\<<!ClientComputerName>>_. 
+ 
  On existing version can be only the name of computer when the engine is running. The network support is to be implemented in future.
