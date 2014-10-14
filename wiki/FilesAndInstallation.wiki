@@ -7,6 +7,7 @@
 || || *Purpose* || *Location* ||
 || *treebase.dll* || API DLL || system-wide shared directory ||
 || *treebasecommon.dll* || common DLL for API and engine || system-wide shared directory ||
+|| *treebaseengine.exe* || database engine || deployment directory ||
 
 
 = Details =
