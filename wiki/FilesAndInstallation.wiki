@@ -2,12 +2,9 @@
 
 = Files And Installation =
 
-Add your content here.
+== Package Components ==
+
+|| treebase.dll || API DLL _is should be placed in system-wide shared directory ||
 
 
 = Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
