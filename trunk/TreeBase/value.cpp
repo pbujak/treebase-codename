@@ -55,7 +55,8 @@ static BOOL _ValidateData(DWORD a_dwType, TBASE_VALUE_DATA *a_pData, DWORD a_cbS
     switch (a_dwType)
     {
         case TBVTYPE_INTEGER:
-        case TBVTYPE_FLOAT:   
+        case TBVTYPE_FLOAT:  
+            break; 
         case TBVTYPE_TEXT:    
             if (strlen(a_pData->text)>255)
                 return FALSE;
@@ -177,7 +178,7 @@ static TBASE_VALUE* _AllocValue(DWORD a_dwType, TBASE_VALUE_DATA *a_pData, DWORD
     pValue->cbSize = cbSize;
     pValue->dwRefCount = 1;
 
-    // wype³nij...
+    // wypeÂ³nij...
     memcpy(&pValue->data, a_pData, cbSize-offsetof(TBASE_VALUE, data));
 
     pTaskInfo->m_setPointers.insert(pValue);
@@ -235,7 +236,7 @@ BOOL WINAPI TBASE_ReAllocValue(TBASE_VALUE** a_ppValue, DWORD a_dwType, TBASE_VA
     pValue->dwType = a_dwType;
     pValue->cbSize = cbSize;
 
-    // wype³nij...
+    // wypeÂ³nij...
     memcpy(&pValue->data, a_pData, cbSize-offsetof(TBASE_VALUE, data));
 
     *a_ppValue = pValue;
