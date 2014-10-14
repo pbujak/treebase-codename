@@ -12,7 +12,7 @@
 
  * *\!CurrentUser*
  If any application tries to store data local to logged on OS user, just this section should be used. It is mapped to _\!RootStorage\Users\<<!CurrentUserId>>_.
-The _!CurrentUserId_ is an internal identifier of the user.
+ The _!CurrentUserId_ is an internal identifier of the user. This identifier is OS independent - it is internally translated from OS user.
 
 ----
  * *\!LocalMachine*
