@@ -11,6 +11,9 @@
 
 == Value Types ==
 
-|| *Integer* || 32-bit integral value ||
+|| *Integer* || 64-bit integral value ||
 || *Float* || 64-bit floating point value ||
 || *Text* || String value (up to 255 characters) ||
+|| *Currency* || 128-bit integral value, that represents currency scaled by 10000 ||
+|| *Point* || A pair of integral values {_x_,_y_} that represent a point ||
+|| *Rectangle* || A quad of integral values {_x_,_y_,_width_,_height_} that represent a rectangle ||
