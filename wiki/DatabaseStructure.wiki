@@ -40,6 +40,6 @@
 
 ----
  * *\System*
- It is reserved for internal usage by the running database engine. It contains the folloqing subsections:
+ It is reserved for internal usage by the running database engine. It contains the following subsections:
 || Status || The status of current resources such as sessions, databasses and alarms ||
 || Temp || Mounted temporary section for each database ||
