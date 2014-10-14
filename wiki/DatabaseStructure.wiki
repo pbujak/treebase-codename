@@ -23,8 +23,7 @@
 
 ----
  * *\Databases*
- Shared databases across applications or computers (not implemented yet) should be created in just this section
+ Shared databases across applications or computers (not implemented yet) should be created in just this section.
 
- *Example*
-
+ ====Example:====
   _\Databases\!ExampleCadApp\Projects_
