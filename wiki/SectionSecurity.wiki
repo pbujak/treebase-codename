@@ -11,3 +11,9 @@ Each section contains associated information security attributes. It tells if us
  * White list (optional)
  * Black list (optional)
 
+== Checkinh algorithm ==
+<code language="Basic">
+BOOLEAN Allow
+IF CurrentUser IS OWNER THEN
+   Allow = Check(Attributes.OwnerRights)
+</code>
