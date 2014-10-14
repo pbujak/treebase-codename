@@ -4,6 +4,8 @@
 
   * Each section can contain subsections. 
   * Each section can contain named values, unless it has an attribute TBATTR_NOVALUES
+  * Each named value has a form _key -> value_
+  * Duplicate names of both values and subsections are not allowed within section
 
 
 = Details =
