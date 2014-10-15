@@ -2,4 +2,4 @@
 
 = System Architecture =
 
-https://treebase.googlecode.com/svn/images/TreeBaseSchema.PNG
+https://treebase.googlecode.com/svn/images/SystemArchitecture.PNG
