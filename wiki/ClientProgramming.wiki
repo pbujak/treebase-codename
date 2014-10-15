@@ -4,7 +4,7 @@
 
 === Section operations ===
 
-Function _{{{ TBASE_CreateSection }}}_ modifies
+Function {{{ TBASE_CreateSection }}} modifies
 
 = Details =
 
