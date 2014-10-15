@@ -2,7 +2,9 @@
 
 = System Architecture =
 
-== Abstract ==
+== Description ==
+
+The _TreeBaseEngine.exe_ is a server process that can be running as an OS service (now inly Windows) or directly from command line (in practice only for testing). 
 
 ----
 == System Schema ==
