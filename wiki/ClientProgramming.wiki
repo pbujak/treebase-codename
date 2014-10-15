@@ -20,6 +20,13 @@
 
  The other section functions can be used to delete, rename or create a new link to section in an other parent in the same [FilesAndInstallation database file]. The functions {{{TBASE_ExportSection}}}, {{{TBASE_ImportSection}}} are _deprecated_ and it would be better to reimplement them.
 
+----
+=== Value operations ===
+
+ A new value should be first allocated by {{{TBASE_AllocValue}}}. Later it can be stored in section by {{{TBASE_SetValue}}}.
+
+
+
 = Details =
 
 [https://code.google.com/p/treebase/source/browse/trunk/TreeBaseCommon/TreeBase.h treebase.h]
