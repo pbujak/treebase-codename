@@ -10,7 +10,7 @@
  When the given section already exists - it is open in _dynamic_ mode.
  The handle of of just open section is returned. It can be used to manipulate values or subsections of it. Handles of open sections are *local to threads*. To release the open section use function {{{TBASE_CloseSection}}}.
 
- In order the function {{{TBASE_CreateSection}}} open the existing section. In contrary to creation, the name parameter can be a path (not a single name) related to base section given also as parameter. If base is root, give reserved value {{{TBSECTION_ROOT}}} instead of handle.
+ In order the function {{{TBASE_OpenSection}}} open the existing section. In contrary to creation, the name parameter can be a path (not a single name) related to base section given also as parameter. If base is root, give reserved value {{{TBSECTION_ROOT}}} instead of handle. It can be open in 3 modes; _snapshot_, _dynamic_ or _default_.
 
 = Details =
 
