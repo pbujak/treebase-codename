@@ -2,7 +2,7 @@
 
 = Server Architecture =
 
-[#Description Description]
+[#Description Go to description]
 
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
 
