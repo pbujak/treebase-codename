@@ -6,7 +6,7 @@
 
  The _!TreeBaseEngine.exe_ creates a server process that can be running as an OS service (now inly Windows) or directly from command line (in practice only for testing). It contains a linked and loaded DLL _!TreeBaseCommon.dll_ that is responsible for communication.
 
- Each client process has loaded both DLLs; _!TreeBase.dll_ that implements the API and _!TreeBaseCommon.dll_.
+ Each client process has loaded both DLLs; _!TreeBase.dll_ (that implements the API) and _!TreeBaseCommon.dll_.
 
  On current implementation only shared memory is used to communicate between server and clients. But the design of _!TreeBaseCommon.dll_ allows to introduce in future mechanisms to communicate via network (named pipes, sockets).
 
