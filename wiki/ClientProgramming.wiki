@@ -2,7 +2,7 @@
 
 = Programming at Client Side =
 
-Add your content here.
+=== Section operations ===
 
 Function _{{{ TBASE_CreateSection }}}_ modifies
 
