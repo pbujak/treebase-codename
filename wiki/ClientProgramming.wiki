@@ -18,7 +18,7 @@
 
  In the _default_ mode, the engine decides what mode should be applied. When the user has {{{TBACCESS_OPENDYNAMIC}}} access right, the dynamic mode is used. Otherwise the section is open in snapshot mode.
 
- The other section functions can be used to delete, rename or create a new link to section in an other parent in the same database file (see about [FilesAndInstallation data files]). The functions {{{TBASE_ExportSection}}}, {{{TBASE_ImportSection}}} are _deprecated_ and it would be better to reimplement them.
+ The other section functions can be used to delete, rename or create a new link to section in an other parent in the same [FilesAndInstallation database file]. The functions {{{TBASE_ExportSection}}}, {{{TBASE_ImportSection}}} are _deprecated_ and it would be better to reimplement them.
 
 = Details =
 
