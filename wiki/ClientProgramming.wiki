@@ -4,7 +4,7 @@
 
 === Section operations ===
 
-Function {{{ TBASE_CreateSection }}} modifies
+To create a new section, use function {{{ TBASE_CreateSection }}}. It mus be created directly in parent section (See [DatabaseStructure database structure] to choose a suitable location). The name of new section must
 
 = Details =
 
