@@ -4,10 +4,11 @@
 
 === Section operations ===
 
- To create a new section, use function {{{TBASE_CreateSection}}}. It mus be created directly in parent section (See [DatabaseStructure database structure] to choose a suitable location). The name of new section must be shorter than 128 characters. Tha attribute can be {{{TBATTR_NOVALUES}}}, that means that section can have only subsections. Otherwise it can ontain values. The advantage of sections without values is that it can avoid 
-sharing problem. When the given section already exists - it is open in _dynamic_ mode.
-The handle of of just open section is returned. It can be used to manipulate values or subsections of it. Handles of open sections are *
-local to threads*. To release the open section use function {{{TBASE_CloseSection}}}
+ To create a new section, use function {{{TBASE_CreateSection}}}. It mus be created directly in parent section (See [DatabaseStructure database structure] to choose a suitable location). The name of new section must be shorter than 128 characters. Tha attribute can be {{{TBATTR_NOVALUES}}}, that means that section can have only subsections. Otherwise it can ontain values. The advantage of sections without values is that it can avoid  sharing problem. 
+ The user cen also pass the [SecurityModel security attributes] parameter. It can be {{{NULL}}}, in this case is inherited from parent.
+
+ When the given section already exists - it is open in _dynamic_ mode.
+ The handle of of just open section is returned. It can be used to manipulate values or subsections of it. Handles of open sections are *local to threads*. To release the open section use function {{{TBASE_CloseSection}}}.
 
 = Details =
 
