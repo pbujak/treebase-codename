@@ -23,10 +23,7 @@
 ----
 === Value operations ===
 
- A new value should be first allocated by {{{TBASE_AllocValue}}}. A source memory block and [DataRepresentation type] should be given as parameter. Later it can be stored in section by {{{TBASE_SetValue}}}. When the edit mode has not been explicitely initialized by {{{TBASE_Edit}}} function, it is done implicitely. The edit mode is available only when the section is open nowhere else (SWMR semantics) in _dynamic_ mode, otherwise the trial will fail. The values are not set directly, but buffered. Later they should be commited by {{{TBASE_Update}}}. The function also leaves edit mode. When multiple values are set - it is recommended to make a single commit after all.
-To get an existing value the function {{{TBASE_GetValue}}} should be called. It returns the pointer of obtained value.
-
- Both allocated and got values should be freed by {{{TBASE_FreeValue}}}.
+ A new value should be first allocated by {{{TBASE_AllocValue}}}. A source memory block and [DataRepresentation type] should be given as parameter. Later it can be stored in section by {{{TBASE_SetValue}}}. When the edit mode has not been explicitely initialized by {{{TBASE_Edit}}} function, it is done implicitely. The edit mode is available only when the section is open nowhere else (SWMR semantics) in _dynamic_ mode, otherwise the trial will fail. The values are not set directly, but buffered. Later they should be commited by {{{TBASE_Update}}}. The function also leaves edit mode. When multiple values are set - it is recommended to make a single commit after all. To get an existing value the function {{{TBASE_GetValue}}} should be called. It returns the pointer of obtained value. Both allocated and got values should be freed by function {{{TBASE_FreeValue}}}.
 
 
 = Details =
