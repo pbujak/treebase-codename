@@ -14,7 +14,9 @@
 
  In the _snapshot_ mode the temporary copy of section content (excluding subsections) is created while opening. This mode is read-only. The advantage of it is that the user is can browse any section without sharing restrictions.
 
- The _dynamic_ mode is related to the real image of section. The opening mode is allowed only when the user has a {{{TBACCESS_OPENDYNAMIC}}} access right. Unlike in snapshot mode the opening may be refused, when the section is opened elsewhere and is being modified there. 
+ The _dynamic_ mode is related to the real image of section. The opening mode is allowed only when the user has a {{{TBACCESS_OPENDYNAMIC}}} access right. Unlike in snapshot when the section is open in this mode - it cannot be modified any elsewhere. 
+
+ In the _default_ mode, the engine decides what mode should be applied. When the user has {{{TBACCESS_OPENDYNAMIC}}} access right, the dynamic mode is used. Otherwise the section is open in snapshot mode.
 
 = Details =
 
