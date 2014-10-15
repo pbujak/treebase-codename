@@ -28,3 +28,10 @@
 TreeBaseEngine /install 
 }}}
  The Windows service will be created and _Data_ subdirectory created in deployment directory
+
+----
+== Uninstall ==
+ If you want to uninstall the engine use the following command:
+{{{ 
+TreeBaseEngine /uninstall 
+}}}
