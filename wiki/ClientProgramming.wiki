@@ -4,7 +4,7 @@
 
 Add your content here.
 
-Function {{{TBASE_CreateSection}}}
+Function {{{ TBASE_CreateSection }}} modifies
 
 = Details =
 
