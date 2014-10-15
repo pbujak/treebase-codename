@@ -1,10 +1,9 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Server Architecture =
 
-Add your content here.
-
-
-= Details =
+== Schema ==
 
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
+
+----
