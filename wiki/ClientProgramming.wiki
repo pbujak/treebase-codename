@@ -10,7 +10,11 @@
  When the given section already exists - it is open in _dynamic_ mode.
  The handle of of just open section is returned. It can be used to manipulate values or subsections of it. Handles of open sections are *local to threads*. To release the open section use function {{{TBASE_CloseSection}}}.
 
- In order the function {{{TBASE_OpenSection}}} open the existing section. In contrary to creation, the name parameter can be a path (not a single name) related to base section given also as parameter. If base is root, give reserved value {{{TBSECTION_ROOT}}} instead of handle. It can be open in 3 modes; _snapshot_, _dynamic_ or _default_.
+ In order the function {{{TBASE_OpenSection}}} open the existing section. In contrary to creation, the name parameter can be a path (not a single name) related to base section given also as parameter. If base is root, give reserved value {{{TBSECTION_ROOT}}} instead of handle. It can be open in 3 modes; _snapshot_, _dynamic_ or _default_. The returned handle must be released in the same manner as after creating.
+
+ In the _snapshot_ mode the temporary copy of section content (excluding subsections) is created while opening. This mode is read-only. The advantage of it is that the user is can browse any section without sharing restrictions.
+
+ The _dynamic_ mode is related to the real image of section. The opening mode is allowed only when the user has a {{{TBACCESS_OPENDYNAMIC}}} access right. Unlike in snapshot mode the opening may be refused, when the section is opened elsewhere and is being modified there. 
 
 = Details =
 
