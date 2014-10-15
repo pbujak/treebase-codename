@@ -28,7 +28,8 @@
 ----
 === Other operations ===
 
- If you want to manipulate black and white lists use functions {{TBASE_Acl'*'}}
+ * If you want to manipulate black and white lists use functions {{{TBASE_Acl...}}}. 
+ * To set or get security attributes of section use functions {{{TBASE_GetSectionSecurity}}}, {{{TBASE_SetSectionSecurity}}}
 
 ----
 === Function definitions ===
