@@ -2,7 +2,7 @@
 
 = Server Architecture =
 
-== Schema ==
+See below to see description
 
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
 
