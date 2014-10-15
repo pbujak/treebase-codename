@@ -2,4 +2,7 @@
 
 = System Architecture =
 
+== Abstract ==
+
+== System Schema ==
 https://treebase.googlecode.com/svn/images/SystemArchitecture.PNG
