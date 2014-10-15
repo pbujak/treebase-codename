@@ -1,0 +1,5 @@
+#summary One-sentence summary of this page.
+
+= System Architecture =
+
+https://treebase.googlecode.com/svn/images/TreeBaseSchema.PNG
