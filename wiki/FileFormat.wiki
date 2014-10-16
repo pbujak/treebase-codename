@@ -17,3 +17,5 @@ https://treebase.googlecode.com/svn/images/FileLayers.PNG
 
 ----
 == Binary Layer ==
+
+https://treebase.googlecode.com/svn/images/FileBinaryLayer.PNG
