@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= File Format =
+
+== Introduction ==
+
+The data of each file can be considered on 3 separate layers: 
+ * binary
+ * segment
+ * section and BLOB
+
+https://treebase.googlecode.com/svn/images/FileLayers.PNG
