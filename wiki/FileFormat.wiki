@@ -9,4 +9,7 @@ The data of each file can be considered on 3 separate layers:
  * segment
  * section and BLOB
 
+|| *Page* || Basic unit of data, that can be loaded or stored to file ||
+|| *Segment* || Logical sequence of pages (not neccessarily adjacent), that can be understood as a file in file ||
+
 https://treebase.googlecode.com/svn/images/FileLayers.PNG
