@@ -31,7 +31,7 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 ----
 == Segment Layer ==
 
- Segments are the logical, variable sized sequences of pages. Each member page is considered as numbered within segment regardless of its physical position within file. In order segments also have number identrifiers. Generally the numbers are dynamically allocated while segment creation excluding reserved numbers.
+ Segments are the logical, variable sized sequences of pages. Each member page has anumber relative to segment regardless of its absolute position within file. In order segments also have number identifiers. Generally the numbers are dynamically allocated while segment creation excluding reserved numbers.
 
 <code language="C++">
 #define SEGID_RESERVED   0x00FFFFFF
@@ -42,6 +42,6 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 ----
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
 
- The page order numbers within segments must be in any way translated into physical locations in file. It is the task of page tables together with page directory.
+ The page relative order numbers within segments must be in any way translated into absolute order numbers in file. It is the task of page tables together with page directory. Each physical page (let us name it "A") has an associated entry in corresponding page table. This entry contains absolute address of page A's successor within segment or value 0, when page A is the last within segment. Each page table has 4096 entries. To match a proper table - the absolute page number is divided by 4096, the result is an index into dage table directory. The corresponding entry in the directory is an absolute number of first page of the proper page table.
 
 https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
