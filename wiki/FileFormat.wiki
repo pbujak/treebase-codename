@@ -39,9 +39,9 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 #define SEGID_SEGMENTDIR 0x00FFFF02
 #define SEGID_SECDATA    0x00FFFF03 
 </code>
-
+----
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
 
- The page order numbers within segments must be in any way translated into physical locations in file. To achieve it
+ The page order numbers within segments must be in any way translated into physical locations in file. It is the task of page tables together with page directory.
 
 https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
