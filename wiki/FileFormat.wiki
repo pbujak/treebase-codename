@@ -31,4 +31,6 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 ----
 == Segment Layer ==
 
+ Segments are the logical, variable sized logical sequences of pages. Each member page of segment is considered as numbered within segment regardless of its physical position within file. In order segments also have number identrifiers. 
+
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
