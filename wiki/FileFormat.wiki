@@ -42,6 +42,6 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
 
- The segments must be in any way mapped to physical regions of file.
+ The page order numbers within segments must be in any way translated into physical locations in file. To achieve it
 
 https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
