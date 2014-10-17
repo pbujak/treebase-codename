@@ -45,3 +45,8 @@ https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
  The page relative order numbers within segments must be in any way translated into absolute order numbers in file. It is the task of Page Tables together with Page Table Directory. Each physical page (let us name it "A") has an associated entry in corresponding Page Table. This entry contains absolute address of page A's successor within segment or value 0, when page A is the last within segment. Each Page Table has 4096 entries. To match a proper table - the absolute page number is divided by 4096, the result is an index into Page Table Directory. The corresponding entry in the directory is an absolute number of first page of the proper Page Table.
 
 https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
+
+----
+== Section And BLOB Layer ==
+
+https://treebase.googlecode.com/svn/images/SectionEntry.PNG
