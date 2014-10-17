@@ -20,6 +20,7 @@ https://treebase.googlecode.com/svn/images/FileLayers.PNG
 ----
 == Page Layer ==
 
- Pages are the atomic units of data, that are read or written to database file. Each page has an associated CRC code, which follows the data itself. Besides the simple encryption is used - pages are ciphered by XOR-ing by a variable length key (64-128 bytes), that is stored in file header. It is rather primitive algorithm, but sophisticated enough to make the data file unable to be read directly.
+ Pages are the atomic units of data, that are read or written to database file. Each page has an associated CRC code, which follows the data itself. Besides the simple encryption is used - pages are ciphered by XOR-ing by a variable length key (64-128 bytes), that is stored in file header. It is rather primitive algorithm, but sophisticated enough to make containing strings unable to be understood while direct file viewing.
+ The file header is stored in page 0, but it is managed differently, than other pages. First its CRC is not stored after the whole page, but directly follows the header. Seconds the header is not encrypted, because the header itself contains the key.
 
 https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
