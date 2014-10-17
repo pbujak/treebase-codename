@@ -25,3 +25,5 @@ https://treebase.googlecode.com/svn/images/FileLayers.PNG
  When any page is requested to be read, the whole group of 16 pages is prefetched and cached. While storing the adjacent pages are merged into groups, but not exceeding 16 pages.
 
 https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
+
+ In case of in-memory and temporary storage the situation looks a litte differently. There is neither CRC computing nor encrypting in this case, because these storages are as efficient as possible. 
