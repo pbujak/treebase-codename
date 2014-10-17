@@ -26,4 +26,7 @@ https://treebase.googlecode.com/svn/images/FileLayers.PNG
 
 https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 
- In case of in-memory and temporary storage the situation looks a litte differently. There is neither CRC computing nor encrypting in this case, because these storages are as efficient as possible. In assumption they are not persist, so data durability need not to be guaranted.
+ In case of in-memory and temporary storage the situation looks a litte differently. There is neither CRC computing nor encrypting in this case. In assumption these kinds of storage are not persistent, so data durability need not to be guaranted, but they should be as efficient as possoble.
+
+----
+== Segment Layer ==
