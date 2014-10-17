@@ -28,8 +28,6 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 
  In case of in-memory and temporary storage the situation looks a litte differently. There is neither CRC computing nor encrypting in this case. In assumption these kinds of storage are not persistent, so data durability need not to be guaranted, but they should be as efficient as possoble.
 
-====Related sources====
- * [https://code.google.com/p/treebase/source/browse/trunk/TreeBaseSvr/TDataFile.cpp TDataFile.cpp]
 ----
 == Segment Layer ==
 
@@ -43,3 +41,7 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 </code>
 
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
+
+ The segments must be in any way mapped to physical regions of file.
+
+https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
