@@ -31,6 +31,13 @@ https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
 ----
 == Segment Layer ==
 
- Segments are the logical, variable sized logical sequences of pages. Each member page of segment is considered as numbered within segment regardless of its physical position within file. In order segments also have number identrifiers. 
+ Segments are the logical, variable sized sequences of pages. Each member page is considered as numbered within segment regardless of its physical position within file. In order segments also have number identrifiers. Generally the numbers are dynamically allocated while segment creation excluding reserved numbers.
+
+<code language="C++">
+#define SEGID_RESERVED   0x00FFFFFF
+#define SEGID_TABLE      0x00FFFF01
+#define SEGID_SEGMENTDIR 0x00FFFF02
+#define SEGID_SECDATA    0x00FFFF03 
+</code>
 
 https://treebase.googlecode.com/svn/images/FileSegmentLogic.PNG
