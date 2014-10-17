@@ -18,6 +18,8 @@ Each layer can be treated by a black box by others.
 https://treebase.googlecode.com/svn/images/FileLayers.PNG
 
 ----
-== Binary Layer ==
+== Page Layer ==
+
+ Pages are the atomic units of data, that are read or written to database file. Each page has an associated CRC code, which follows the data itself. Besides the simple encryption is used - pages are ciphered by XOR-ing by a variable length key (64-128 bytes), that is stored in file header. It is rather primitive algorithm, but sophisticated enough to make the data file unable to be read directly.
 
 https://treebase.googlecode.com/svn/images/FilePageLayer.PNG
