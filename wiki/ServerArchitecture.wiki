@@ -17,5 +17,10 @@
 
 [https://treebase.googlecode.com/svn/images/StorageCaching.PNG]
 
+==== Related classes ====
+ * *Storage::TStorage*
+ * *Storage::TDataFile*
+ * *Storage::TTempFile*
 ----
+
 === Junctions Handling ===
