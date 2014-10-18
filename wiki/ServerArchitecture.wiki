@@ -18,11 +18,11 @@
 [https://treebase.googlecode.com/svn/images/StorageCaching.PNG]
 
 || *Related Classes* ||
-|| !DataPage::TPageCache ||
-|| Storage::TStorage and subclasses ||
-|| Storage::TDataFile ||
-|| Storage::TTempFile ||
-|| Storage::TAdvPageRef ||
+|| {{{!DataPage::TPageCache}}} ||
+|| {{{Storage::TStorage}}} and subclasses ||
+|| {{{Storage::TDataFile}}} ||
+|| {{{Storage::TTempFile}}} ||
+|| {{{Storage::TAdvPageRef}}} ||
 
 ----
 === Segment Manager ===
