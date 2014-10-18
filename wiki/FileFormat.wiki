@@ -49,4 +49,7 @@ https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
 ----
 == Section And BLOB Layer ==
 
+==== Data blocks ====
+ Each page of section's segment is divided into data blocks used by items. Each item occupies a single block. In fact sections contain not subsections itself, but numeric identifiers of their segments. But blocks can not neccessarily contain items, they can be empty. Moreover each new page allocated to segment is treated as a large free block. In order to allocate
+
 https://treebase.googlecode.com/svn/images/SectionEntry.PNG
