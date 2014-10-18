@@ -11,4 +11,4 @@
 
 === Storage Subsystem ===
 
- The storage subsystem handles the [FileFormat#Page Layer page layer]
+ The storage subsystem handles the [FileFormat#'Page Layer' page layer]
