@@ -11,7 +11,8 @@
 
 === Storage Subsystem ===
 
- The storage subsystem handles the [FileFormat#Page_Layer page layer] for each storage. Each database file is treated as a separate storage unit. [#Junctions_Handling Junctions] are used to map all storages into the namespace.
+ The storage subsystem handles the [FileFormat#Page_Layer page layer] for each storage. Each database file is treated as a separate storage unit. [#Junctions_Handling Junctions] are used to map all storages into the namespace. 
+ Two storages are managed differently, than the ordinary storages related to files. The first storage is located in memory, it contains the [DatabaseStructure standard database sections]. These sections are volatile, so they are created each time, during the engine startup. The second is located in a temporary file. It is not mapped into namespace, but used internally for [ClientProgramming#Section_operations snapshots].
 
 ----
 === Junctions Handling ===
