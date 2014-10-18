@@ -60,4 +60,7 @@ https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
  In order to allocate block for new item, the first free block is splitted (in current implementation on the last page), or allocated itself, when the size is matching. The size is adjusted to 24 multiple of Fibonacci number.
  When any item is deleted its block is marked as free and possibly consolidated with adjacent free blocks. To find the beginning of the previous block each block has a 2-byte footer. It contains the offset of block beginning.
 
+==== Item structure ====
+ The first data block of each section segment contains a section header. Its size is 1008, the {{{iType}}} field is marked as {{{TBVITYPE_RESERVED}}}.
+
 https://treebase.googlecode.com/svn/images/SectionEntry.PNG
