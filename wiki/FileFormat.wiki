@@ -61,6 +61,6 @@ https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
  When any item is deleted its block is marked as free and possibly consolidated with adjacent free blocks. To find the beginning of the previous block each block has a 2-byte footer. It contains the offset of block beginning.
 
 ==== Item structure ====
- The first data block of each section segment contains a section header. Its size is 1008, the {{{iType}}} field is marked as {{{TBVITYPE_RESERVED}}}.
+ The first data block of each section segment contains a section header. Its size is 1008, the {{{iType}}} field is marked as {{{TBVITYPE_RESERVED}}}. This table has 241 entries, each of them contains the pointer to the first item, that matches the hash (computed from name) criteria. Each of them contains in order pointer to the next item and so on. The pointer consists on 32 bytes; higher 16 bits represent the page number relative to segment, the lower 16 ones are the offset within page. The order number distinguishes items that have the same hash value (besides name).
 
 https://treebase.googlecode.com/svn/images/SectionEntry.PNG
