@@ -17,10 +17,8 @@
 
 [https://treebase.googlecode.com/svn/images/StorageCaching.PNG]
 
-==== Related classes ====
- * *Storage::TStorage*
- * *Storage::TDataFile*
- * *Storage::TTempFile*
 ----
+=== Segment Manager ===
+ The segment manager is responsible for [FileFormat#Segment_Layer segment layer] handling. It translates in-segment relative pages numbers to absolute page numbers and _vice versa_, allocates space for new pages within segment, handles creation and deletion of segments.
 
 === Junctions Handling ===
