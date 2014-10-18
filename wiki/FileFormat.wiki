@@ -50,7 +50,14 @@ https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
 == Section And BLOB Layer ==
 
 ==== Data blocks ====
- Each page of section's segment is divided into data blocks used by items. Each item occupies a single block. In fact sections contain not subsections itself, but numeric identifiers of their segments. The same situation is in case of BLOBs. But blocks can not neccessarily contain items, they can be empty. Moreover each new page allocated to segment is treated as a large free block. In order to allocate block for new item, the first free block is splitted (in current implementation on the last page), or allocated itself, when the size is matching. The size is adjusted to 24 multiple of Fibonacci number.
+ Each page of section's segment is divided into data blocks used by items. Each item occupies a single block. In fact sections contain not subsections itself, but numeric identifiers of their segments. The same situation is in case of BLOBs. But blocks can not neccessarily contain items, they can be empty. Moreover each new page allocated to segment is treated as a large free block. When a block is not associated any item, the type offset field {{{iType}}} contains a specific value instad (see below)
+<code language="C++">
+#define TBVITYPE_NOTUSED     0 
+#define TBVITYPE_RESERVED    1 
+#define TBVITYPE_DELETED     2 
+</code>
+ 
+ In order to allocate block for new item, the first free block is splitted (in current implementation on the last page), or allocated itself, when the size is matching. The size is adjusted to 24 multiple of Fibonacci number.
  When any item is deleted its block is marked as free and possibly consolidated with adjacent free blocks. To find the beginning of the previous block each block has a 2-byte footer. It contains the offset of block beginning.
 
 https://treebase.googlecode.com/svn/images/SectionEntry.PNG
