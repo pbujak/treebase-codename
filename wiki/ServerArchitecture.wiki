@@ -14,4 +14,4 @@
  The storage subsystem handles the [FileFormat#Page_Layer page layer] for each storage. Each database file is treated as a separate storage unit. [#Junctions_Handling Junctions] are used to map all storages into the namespace.
 
 ----
-=== Junctions Handlinh ===
+=== Junctions Handling ===
