@@ -51,6 +51,6 @@ https://treebase.googlecode.com/svn/images/FileSegmentLayout.PNG
 
 ==== Data blocks ====
  Each page of section's segment is divided into data blocks used by items. Each item occupies a single block. In fact sections contain not subsections itself, but numeric identifiers of their segments. The same situation is in case of BLOBs. But blocks can not neccessarily contain items, they can be empty. Moreover each new page allocated to segment is treated as a large free block. In order to allocate block for new item, the first free block is splitted (in current implementation on the last page), or allocated itself, when the size is matching. The size is adjusted to 24 multiple of Fibonacci number.
-When any item is deleted its block is marked as free and possibly consolidated with adjacent free blocks. To find the beginning of the previous block each block has a 2-byte footer. It contains the offset of block beginning.
+ When any item is deleted its block is marked as free and possibly consolidated with adjacent free blocks. To find the beginning of the previous block each block has a 2-byte footer. It contains the offset of block beginning.
 
 https://treebase.googlecode.com/svn/images/SectionEntry.PNG
