@@ -35,4 +35,8 @@
 || {{{SEGMENT_*}}} functions ||
 
 ----
+=== Data Manager ===
+ The task of data manager is to manage lower part of [FileFormat#Section_And_BLOB_Layer segment layer]. Its code implements the structure of data blocks related to items, and associated operations such as adding, modifying, deleting items etc.
+
+----
 === Junctions Handling ===
