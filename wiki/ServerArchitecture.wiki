@@ -41,7 +41,7 @@
 || *Related Functions And Classes* ||
 || {{{TSectionSegment}}} ||
 || {{{TSectionSegmentCompact}}} ||
-|| {{{Util::Segment::*}}} ||
+|| {{{Util::Segment::*}}} functions ||
 
 ----
 === Junctions Handling ===
