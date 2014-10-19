@@ -20,6 +20,7 @@
 || *Related Classes* ||
 || {{{DataPage::TPageCache}}} ||
 || {{{Storage::TStorage}}} and subclasses ||
+|| {{{Storage::TStorageHandlerTask}}}
 || {{{Storage::TDataFile}}} ||
 || {{{Storage::TTempFile}}} ||
 || {{{Storage::TAdvPageRef}}} ||
@@ -33,6 +34,15 @@
 || {{{TSegment}}} ||
 || {{{TAdvancedSegment}}} ||
 || {{{SEGMENT_*}}} functions ||
+
+----
+=== Database Page Compacting Daemon ===
+ When some, not neccessarily adjacent pages are deleted, the structure of file is no longer contiguous, the gaps appear. It leads to situation, when the database file takes far more disk space, than it could.
+ So, the compacting mechanism is very desirable. It is implemented in a separate thread, that is active only when no client application is running (it is achieved by lock of the {{{TDBManager}}} object).
+ 
+|| *Related Classes* ||
+|| {{{TCompactBase}}} ||
+|| {{{TCompactTask}}} ||
 
 ----
 === Data Manager ===
