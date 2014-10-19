@@ -45,7 +45,8 @@
 
 ----
 === Sections Handling ===
- The purpose of its subsystem is in order to handle upper part of [FileFormat#Section_And_BLOB_Layer section layer]. It manages opening, closing sections and path resolving.
+ The purpose of its subsystem is in order to handle upper part of [FileFormat#Section_And_BLOB_Layer section layer]. The [#Data_Manager data manager] itself does not understand the difference between section items and subsections. Just this module (Section Handling) manages the special treatment of subsections.
+ Besides it is responsible for opening, closing sections and, resolving and other section operations.
 
 || *Related Functions And Classes* ||
 || {{{TSection}}} ||
