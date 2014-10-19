@@ -44,4 +44,12 @@
 || {{{Util::Segment::*}}} functions ||
 
 ----
+=== Sections Handling ===
+ The purpose of its subsystem is in order to handle upper part of [FileFormat#Section_And_BLOB_Layer section layer]. It manages opening, closing sections and path resolving.
+
+|| *Related Functions And Classes* ||
+|| {{{TSection}}} ||
+|| {{{SECTION_*}}} functions ||
+
+----
 === Junctions Handling ===
