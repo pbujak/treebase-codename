@@ -64,3 +64,4 @@
 
 ----
 === Junction Mechanism ===
+ Only the memory storage is directly mapped into namespace "\". The other storages require some extra solutions to be visible in the namespace. It is the task of junctions.
