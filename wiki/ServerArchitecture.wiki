@@ -89,7 +89,7 @@ source( databaseId, segmentId ) -> target(databaseId, segmentId )
 === Security Manager ===
  Each section has an associated entity about _security attributes_. In fact it is managed at segment layer - each dynamically created segment has an associated information about its _security attributes_. The security attributes are stored in a special purpose segment, one for each storage. The users are identified by internal UIDs represented in UUID format.
 
-|| *Related Functions and Classes* ||
+|| *Related Functions And Classes* ||
 || {{{Security::Manager::*}}} functions ||
 || {{{Security::TSecurityAttributes}}} ||
 
@@ -97,6 +97,18 @@ source( databaseId, segmentId ) -> target(databaseId, segmentId )
 === Session Management And Authentication Services ===
  This is an intermediate layer between OS users and the [#Security_Manager security manager]. It translates the OS user IDs to the internal IDs and _vice versa_. Besides it is responsible for proper initialization of [#Junction_Mechanism junction points] for sections _\!CurrentUser_ and _\!LocalMachine_.
 
-|| *Related Functions and * ||
+|| *Related Functions* ||
 || {{{Security::Facade::*}}} functions ||
 || {{{Session::*}}} functions ||
+
+----
+=== System Status ===
+ It is responsible for showing the information about system resources in  the _\System\Status_ section. The daemon thread periodically analyses the internal status table and updates the corresponding in-memory sections.
+
+|| *Related Functions And Classes* ||
+|| {{{System::TSystemStatus}}} ||
+|| {{{System::addSession}}} ||
+|| {{{System::removeSession}}} ||
+|| {{{System::addDatabase}}} ||
+|| {{{System::removeDatabase}}} ||
+|| {{{System::setAlarm}}} ||
