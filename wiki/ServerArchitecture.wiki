@@ -4,8 +4,6 @@
 
 <wiki:toc max_depth="3" />
 
-[#Description Go to description]
-
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
 
 ----
