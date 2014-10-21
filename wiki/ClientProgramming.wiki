@@ -2,6 +2,8 @@
 
 = Programming at Client Side =
 
+<wiki:toc max_depth="3" />
+
 === Section operations ===
 
  To create a new section, use function {{{TBASE_CreateSection}}}. It must be created directly in parent section (See [DatabaseStructure database structure] to choose a suitable location). The name of new section must be shorter than 128 characters. Tha attribute can be {{{TBATTR_NOVALUES}}}, that means that section can have only subsections. Otherwise it can ontain values. The advantage of sections without values is that it can avoid sharing problem. 
