@@ -93,4 +93,9 @@ source( databaseId, segmentId ) -> target(databaseId, segmentId )
 || {{{Security::TSecurityAttributes}}} ||
 
 ----
-=== Authentication Services ===
+=== Session Management And Authentication Services ===
+ This is an intermediate layer between OS users and the [Security_Manager security manager]. It translates the OS user IDs to the internal IDs and _vice versa_. Besides it is responsible for proper initialization of [Junction_Mechanism junction points] for sections _\!CurrentUser_ and _\!LocalMachine_.
+
+|| *Related Functions and * ||
+|| {{{Security::Facade::*}}} functions ||
+|| {{{Session::*}}} functions ||
