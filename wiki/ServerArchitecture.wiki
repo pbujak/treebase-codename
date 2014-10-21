@@ -3,7 +3,7 @@
 = Server Architecture =
 
 <wiki:toc max_depth="3" />
-
+----
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
 
 ----
