@@ -1,7 +1,7 @@
 #summary One-sentence summary of this page.
 
 = File Format =
-
+<wiki:toc max_depth="4" />
 ----
 == Introduction ==
 
