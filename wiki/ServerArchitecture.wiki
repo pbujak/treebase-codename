@@ -70,5 +70,12 @@
 source( databaseId, segmentId ) -> target(databaseId, segmentId )
 }}}   
  When any found subsection matches a junction source, the translation is performed. 
- There are 2 kinds of junction points _global_ and _local_, that are used only by one thread. Junction points can be compound, that are both global and local. Let us consider _\!CurrentUser_. The segment corresponding to section _!CurrentUser_ on memory storages is first globally translated to reserved value ( -1, 10 ). Later it is locally translated to segment related current user.
+ There are 2 kinds of junction points _global_ and _local_, that are used only by one thread. Junction points can be compound, that are both global and local. Let us consider _\!CurrentUser_. The segment corresponding to section _!CurrentUser_ on memory storages is first globally translated to reserved value ( -1, 10 ). Later it is locally translated to the segment related the current user.
 
+|| *Junction Point* || *Target* ||
+|| \!CurrentUser || \RootStorage\Users\_<<!UserUID>>_ ||
+|| \!LocalMachine || \RootStorage\Users\_<<!ComputerName>>_ ||
+|| \!RootStorage || The root section of file _treebase.dat_ ||
+|| \!RootStorage\Users || The root section of file _users.dat_ ||
+|| \Databases || The root section of file _databases.dat_ ||
+|| \RootSTorage\Databases || The root section of file _databases.dat_ ||
