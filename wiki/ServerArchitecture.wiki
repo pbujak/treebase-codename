@@ -65,4 +65,10 @@
 ----
 === Junction Mechanism ===
  Only the memory storage is directly mapped into namespace "\". The other storages require some extra solutions to be visible in the namespace. It is the task of the junction mechanism.
- A *junction point* is a pair of source and target sections addresses represented by database and segment ID.
+ A *junction point* is a pair of source and target sections addresses represented by database and segment ID. 
+{{{
+source( databaseId, segmentId ) -> target(databaseId, segmentId )
+}}}   
+ When any found subsection matches a junction source, the translation is performed. 
+ There are 2 kinds of junction points _global_ and _local_, that are used only by one thread. Junction points can be compound, that are both global and local. Let us consider _\!CurrentUser_. The segment corresponding to section _!CurrentUser_ on memory storages is first globally translated to reserved value ( -1, 10 ). Later it is locally translated to segment related current user.
+
