@@ -2,12 +2,15 @@
 
 = Future Improvements and Enhandements =
 
-Add your content here.
+<wiki:toc max_depth="2" />
+----
 
+== Transactions ==
+ In current version of the database engine there is no support of professional transactions. Also ones who browse source code can functions {{{TStorage::beginTrans}}}, {{{TStorage::endTrans}}} and related. They appear to the naked eye, to do with transactions. But in fact _"transactions"_ in this sense are writing operations, that cannot interfere with the flushing mechanism. 
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ The recommended way to implement transactions is to:
+ * Implement a _transaction buffer_ that stores uncommited pages. They would be stored as mappings:
+{{{
+{databaseId,segmentId,pageId} -> data
+}}}
+ The transaction buffer data could be based on a segment in a [Server_Architecture#Storage_Subsystem temporary storage].
