@@ -4,6 +4,7 @@
 
 <wiki:toc max_depth="3" />
 ----
+==Logical Schema==
 [https://treebase.googlecode.com/svn/images/ServerArchitecture.PNG]
 
 ----
