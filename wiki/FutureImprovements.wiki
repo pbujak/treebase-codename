@@ -13,4 +13,67 @@
 {{{
 {databaseId,segmentId,pageId} -> data
 }}}
- The transaction buffer data could be based on a segment in a [Server_Architecture#Storage_Subsystem temporary storage].
+ The transaction buffer data could be based on a segment in a [ServerArchitecture#Storage_Subsystem temporary storage].
+ * Add unit tests for the transaction buffer
+ * The transaction state would be local to thread
+ * Modify class {{{TAdvancedSegment}}}, try to get non-edit-mode page from _transaction buffer_ first, later from the source segment itself.
+ * When a new segment is created within transaction, add support of uncommited segments; the unique number of each new section should be guaranted.
+ * Copy data from transaction buffer to storage while commiting or clear transaction data while rolling back
+----
+
+== Client/Server Architecture ==
+ Now there communication between database engine and its clients is held  only by shared memory. It would be useful to enhance its feature, add support of for example of named pipes. The address of server could be stored in an environment variable
+{{{
+   TREE_BASE_SERVER=\\192.168.1.201
+}}}
+----
+
+== Callbacks ==
+ In some situations (for example [#Export_Import export/import]) the callback mechanism could very useful. To cut a long story short the _TreeBase_ engine could call a client's function. It would look like this:
+!TreeBaseSvr:
+{{{
+   void TClientTask::Callback(TCallParams &a_inParams, TCallParams &a_outParams);
+}}}
+
+!TreeBase:
+{{{
+BOOL TTaskInfo::CallServer(TCallParams &a_inParams, TCallParams &a_outParams)
+{
+    LPCSTR pszText = NULL;
+
+    if (m_bPipeClose)
+        return FALSE;
+
+    try{
+        while(true)
+        {
+           a_inParams.Write(m_pPipe);
+           m_pPipe->Commit();
+           a_outParams.Read(m_pPipe);
+
+           if(a_outParams.IsReturn())
+               break;
+           
+           a_inParams.Reset();
+           HandleCallback(a_outParams, a_inParams);
+           a_outParams.Reset();
+        }
+    }
+    catch (TPipeException*)
+    {
+        m_bPipeClose = TRUE;
+
+}}}
+----
+
+== Export/Import ==
+ This feature is already implemented, but it is untested and has many drawbacks. The new mechanism would be implemented inside TreeBase engine; sections could be read page by page and the callback funtions could be called using the mechanism of [#Callbacks callbacks]
+----
+
+== The GUI library ==
+ It would contain functions that can for example choose a section, edit security etc.
+
+==== Example ====
+<code language="C++">
+BOOL TBASE_EditSectionSecurity(HTBSECTION a_hSection);
+</code>
