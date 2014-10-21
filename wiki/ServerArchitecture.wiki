@@ -2,7 +2,7 @@
 
 = Server Architecture =
 
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 [#Description Go to description]
 
