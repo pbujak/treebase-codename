@@ -77,3 +77,11 @@ BOOL TTaskInfo::CallServer(TCallParams &a_inParams, TCallParams &a_outParams)
 <code language="C++">
 BOOL TBASE_EditSectionSecurity(HTBSECTION a_hSection);
 </code>
+----
+
+== The User-friendly browser ==
+ It would be Windows-Explorer like browser of the database. It could be developed together with [#The_GUI_library GUI library]. But it is recommended to be portable to "Linux/Unix".
+----
+
+== Porting to Linux/Unix ==
+ The current implementation works only on Windows.
