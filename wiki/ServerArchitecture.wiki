@@ -86,4 +86,11 @@ source( databaseId, segmentId ) -> target(databaseId, segmentId )
 
 ----
 === Security Manager ===
- The information about used security attributes is stored on each storage
+ Each section has an associated entity about _security attributes_. In fact it is managed at segment layer - each dynamically created segment has an associated information about its _security attributes_. The security attributes are stored in a special purpose segment, that is one for each storage. The users are identified by internal UIDs represented in UUID format.
+
+|| *Related Functions and Classes* ||
+|| {{{Security::Manager::*}}} functions ||
+|| {{{Security::TSecurityAttributes}}} ||
+
+----
+=== Authentication Services ===
