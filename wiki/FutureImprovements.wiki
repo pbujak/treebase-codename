@@ -67,7 +67,7 @@ BOOL TTaskInfo::CallServer(TCallParams &a_inParams, TCallParams &a_outParams)
 ----
 
 == Export/Import ==
- This feature is already implemented, but it is untested and has many drawbacks. The new mechanism would be implemented inside TreeBase engine; sections could be read page by page and the callback funtions could be called using the mechanism of [#Callbacks callbacks]
+ This feature is already implemented, but it is untested and has many drawbacks. The new mechanism would be implemented inside !TreeBase engine; sections could be read page by page and the callback funtions could be called using the mechanism of [#Callbacks callbacks]
 ----
 
 == The GUI library ==
