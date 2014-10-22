@@ -29,7 +29,7 @@
 ----
 
 == Callbacks ==
- In some situations (for example [#Export_Import export/import]) the callback mechanism could very useful. To cut a long story short the _TreeBase_ engine could call a client's function. It would look like this:
+ In some situations (for example [#Export_Import export/import]) the callback mechanism could very useful. To cut a long story short the _!TreeBase_ engine could call a client's function. It would look like this:
 !TreeBaseSvr:
 {{{
    void TClientTask::Callback(TCallParams &a_inParams, TCallParams &a_outParams);
