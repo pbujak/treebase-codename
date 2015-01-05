@@ -1,0 +1,35 @@
+ <html>
+<body style="font-family:Arial,Helvetica">
+
+<h1><a name="Section_Security_Model"></a>Section Security Model<a href="#Section_Security_Model" class="section_anchor"></a></h1><h2><a name="General"></a>General<a href="#General" class="section_anchor"></a></h2><p>Each section contains associated information security attributes. It tells if user associated to client has permissions to perform any operation. The format of security attributes is following </p><ul><li>Access rights for owner </li><li>Access rights for administrators </li><li>Access rights for all </li><li>White list (optional) </li><li>Black list (optional) </li></ul><p>The white list contains information about allowed rights of specified users. In order black list contains denied rights for specified users </p><hr/><h2><a name="Checking_algorithm"></a>Checking algorithm<a href="#Checking_algorithm" class="section_anchor"></a></h2><p><pre class="prettyprint lang-Basic"> BOOLEAN Allow
+ </p><p> IF CurrentUser IS OWNER THEN
+    Allow = Check(Attributes.OwnerRights)
+ ELSE IF CurrentUser HAS OS ADMIN PRIVILEGES
+    Allow = Check(Attributes.AdminRights)
+ ELSE
+    Allow = Check(Attributes.AllRights)
+ ENDIF
+ </p><p> IF NOT Allow THEN
+    Allow = Check(Attributes.WhiteList(CurrentUser))
+ ELSE IF Allow THEN
+    Allow = Check(Attributes.BlackList(CurrentUser))
+ ENDIF
+ </p><p></pre> </p><hr/><h2><a name="Access_rights"></a>Access rights<a href="#Access_rights" class="section_anchor"></a></h2><p><pre class="prettyprint lang-C++"> #define TBACCESS_BROWSE      0x001
+ #define TBACCESS_GETVALUE    0x002
+ #define TBACCESS_EXPORT      0x004
+ #define TBACCESS_MODIFY      0x008  
+ #define TBACCESS_OPENDYNAMIC 0x010 
+ #define TBACCESS_READ        (TBACCESS_BROWSE | TBACCESS_GETVALUE | TBACCESS_EXPORT)
+ #define TBACCESS_WRITE       (TBACCESS_MODIFY | TBACCESS_OPENDYNAMIC)
+ #define TBACCESS_LINK        0x020
+ #define TBACCESS_DELETE      0x040  // includes BLKMASK_ALLOWREAD
+ #define TBACCESS_SETSTATUS   0x080
+ </p><p> #define TBACCESS_READWRITE   (TBACCESS_READ | TBACCESS_WRITE)
+ #define TBACCESS_EXECUTE     (TBACCESS_LINK | TBACCESS_DELETE | TBACCESS_SETSTATUS)
+ #define TBACCESS_ALL         (TBACCESS_READWRITE | TBACCESS_EXECUTE)
+ #define TBACCESS_NO_GETVALUE (TBACCESS_ALL &amp; ~TBACCESS_GETVALUE)
+ #define TBACCESS_ADMIN_MINIMAL (TBACCESS_DELETE | TBACCESS_EXPORT | TBACCESS_SETSTATUS)
+ </pre> </p><hr/><h2><a name="Allocating_security_attributes_for_newly_created_sections"></a>Allocating security attributes for newly created sections<a href="#Allocating_security_attributes_for_newly_created_sections" class="section_anchor"></a></h2><ul><li>When security attributes are given explicitely they are just applied. A new protection domain is created for the new section. Either the rights for administrators of for all must be at least TBACCESS_ADMIN_MINIMAL. </li><li>When security attributes are not given explicitely, they are inherited from parent section. In this case the new section belongs to the same protection domain as the parent. </li></ul><hr/><h2><a name="Security_attributes_of_standard_sections"></a>Security attributes of standard sections<a href="#Security_attributes_of_standard_sections" class="section_anchor"></a></h2><p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;">  </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Owner</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Admins</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>All</strong> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>\</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> ReadOnly </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>\CurrentUser</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> AllAccess </td><td style="border: 1px solid #ccc; padding: 5px;"> AllAccess </td><td style="border: 1px solid #ccc; padding: 5px;"> ReadOnly AND NOT Export </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>\LocalMachine</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> AllAccess </td><td style="border: 1px solid #ccc; padding: 5px;"> ReadOnly </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>\RootStorage</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> AllAccess </td><td style="border: 1px solid #ccc; padding: 5px;"> ReadOnly </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>\System</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> </td><td style="border: 1px solid #ccc; padding: 5px;"> ReadOnly </td></tr> </table></p>
+
+</body>
+</html>
